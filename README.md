@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/Gaarv/jFastText.svg)](https://jitpack.io/#Gaarv/jFastText)
+
 ## Introduction
 JFastText is a Java wrapper for Facebook's [fastText](https://github.com/facebookresearch/fastText), 
 a library for efficient learning of word embeddings and fast sentence classification. The JNI interface
@@ -8,6 +10,27 @@ loading trained model from file to do label prediction in memory. Model training
 are supported via the command line interface.
 
 JFastText is ideal for building fast text classifiers in Java.
+
+
+## Maven dependency
+Add [JitPack](https://jitpack.io) repository
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+	<url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+Add the dependency
+```xml
+<dependency>
+    <groupId>com.github.Gaarv</groupId>
+    <artifactId>jFastText</artifactId>
+    <version>master-SNAPSHOT</version>
+</dependency>
+```
+For others (gradle, sbt) check [JitPack](https://jitpack.io).
 
 ## Building
 C++ compiler (g++ on Mac/Linux or cl.exe on Windows) is required to compile fastText's code.
